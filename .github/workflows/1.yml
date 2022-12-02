@@ -27,6 +27,7 @@ jobs:
     - run: npm run lint
     
   push_to_registry:
+    needs: nodejs
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
     steps:
